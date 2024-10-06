@@ -7,7 +7,7 @@ from PIL import Image
 
 load_dotenv()  # load all the environment variables
 
-genai.configure(api_key=os.getenv("AIzaSyArHkiK3tFLHsTdUiRpJHkEtT-uq8t2iO0"))
+genai.configure(api_key=os.getenv("AIzaSyArHkiK3tFLHsTdUiRpJHkEtT"))
 
 def get_gemini_response(input, image, prompt):
     model = genai.GenerativeModel('gemini-pro-vision')
